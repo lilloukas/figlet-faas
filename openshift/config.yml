@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: caddyfile-for-figlet
+data:
+  Caddyfile: |
+    {
+        admin off
+        email dev@babyMRI.org
+        http_port 8000
+        https_port 8443
+    }
+
+    figlet.moc.chrisproject.org {
+        reverse_proxy 127.0.0.1:5000
+    }
