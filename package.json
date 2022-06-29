@@ -2,7 +2,6 @@
   "name": "figlet-faas",
   "version": "1.0.0",
   "description": "Figlet over HTTP",
-  "main": "index.js",
   "private": true,
   "author": "Jennings Zhang <jenni_zh@protonmail.com>",
   "license": "MIT",
