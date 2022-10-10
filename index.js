@@ -6,9 +6,9 @@ app.enable('trust proxy');
 
 const title = figlet.textSync('FIGlet as a Service', { font: 'Bulbhead' });
 
-const info = `${title}\n`
-  + '              Hello ENG EC 528 Cloud Computing!\n'
-  + "                            This is an example JavaScript application to demo OpenShift Deployment\n"
+const info = `${title}\n\n\n`
+  + 'Hello ENG EC 528 Cloud Computing!\n'
+  + "This is an example JavaScript application to demo OpenShift Deployment\n"
 
 app.get('/', (req, res) => {
   res.type('text/plain');
