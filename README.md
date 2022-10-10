@@ -3,6 +3,7 @@
 _FaaS_ provides the [FIGlet](https://en.wikipedia.org/wiki/FIGlet)
 command over HTTP.
 
+Forked from [figlet-faas](https://github.com/FNNDSC/figlet-faas)
 ## Usage
 
 ```shell

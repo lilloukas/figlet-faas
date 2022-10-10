@@ -4,12 +4,11 @@ const express = require('express');
 const app = express();
 app.enable('trust proxy');
 
-const title = figlet.textSync('FIGlet as a Service', { font: 'Doom' });
+const title = figlet.textSync('FIGlet as a Service', { font: 'Bulbhead' });
 
 const info = `${title}\n`
-  + '              Fetal-Neonatal Neuroimaging & Developmental Science Center\n'
-  + "                            Boston Children's Hospital\n"
-  + "                              and the Mass Open Cloud\n"
+  + '              Hello ENG EC 528 Cloud Computing!\n'
+  + "                            This is an example JavaScript application to demo OpenShift Deployment\n"
 
 app.get('/', (req, res) => {
   res.type('text/plain');
@@ -21,7 +20,7 @@ app.get('/', (req, res) => {
     return;
   }
   figlet.text(req.query.message, {
-    font: 'Doom',
+    font: 'Bulbhead',
   }, function(err, data) {
     if (err) {
         console.dir(err);
